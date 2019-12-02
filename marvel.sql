@@ -62,8 +62,4 @@ UPDATE people SET name = 'Cody Abbott' WHERE name = 'Cosy Abott';
 
 UPDATE movies SET show_time = '21:25' WHERE title = 'Iron Man 3';
 
-DELETE FROM movies WHERE title = 'Batman Begins';
-
-DELETE FROM people WHERE name = 'James Smith';
-
-SELECT * FROM movies WHERE title = 'Iron Man 3';
+DELETE FROM movies WHERE title IN ('Batman Begins','Thor: Ragnarok','Black Panther')
